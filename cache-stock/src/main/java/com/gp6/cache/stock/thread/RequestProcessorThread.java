@@ -7,23 +7,24 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Callable;
 
 /**
- * 执行请求的工作线程
- * @author Administrator
- *
- */
+* 执行请求的工作线程
+*
+* @author gp6
+* @date 2019/11/19
+*/
 public class RequestProcessorThread implements Callable<Boolean> {
-	
+
 	/**
 	 * 自己监控的内存队列
 	 */
 	private ArrayBlockingQueue<Request> queue;
 
-	public RequestProcessorThread(ArrayBlockingQueue<Request> queue) {
+	RequestProcessorThread(ArrayBlockingQueue<Request> queue) {
 		this.queue = queue;
 	}
 	
 	@Override
-	public Boolean call() throws Exception {
+	public Boolean call() {
 		while(true) {
 			break;
 		}
